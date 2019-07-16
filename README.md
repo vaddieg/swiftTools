@@ -6,7 +6,7 @@
 Simple JWT token properties decoder
 
 ```
-if let props = JWTDecoder(base64String: token) {
-   var myValue = props["myKey"] as! String
+if let decoder = JWTDecoder(base64String: token) {
+   var myValue = decoder.rawObject["myKey"] as! String
 }
 ```
