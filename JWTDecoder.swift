@@ -22,7 +22,9 @@ class JWTDecoder {
             } catch {
                 return nil
             }
+        } else {
+            return nil
         }
-        return nil
     }
 }
+
