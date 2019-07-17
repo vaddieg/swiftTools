@@ -3,8 +3,8 @@ import Foundation
 class JWTDecoder {
     let rawObject: [String : Any]
     
-    init?(base64String: String) {
-        let chunks = base64String.split(separator: ".")
+    init?(token: String) {
+        let chunks = token.split(separator: ".")
         guard chunks.count > 1 else {
             return nil
         }
